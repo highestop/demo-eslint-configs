@@ -1,0 +1,59 @@
+{
+    "name": "demo-eslint-configs",
+    "version": "0.0.0",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "jest.js",
+        "typescript-import.js",
+        "typescript-react.js",
+        "typescript-requiring-type-checking.js",
+        "typescript-rxjs.js",
+        "typescript.js"
+    ],
+    "exports": {
+        ".": "./index.js",
+        "./jest": {
+            "require": "./jest.js",
+            "default": "./jest.js"
+        },
+        "./typescript-import": {
+            "require": "./typescript-import.js",
+            "default": "./typescript-import.js"
+        },
+        "./typescript-react": {
+            "require": "./typescript-react.js",
+            "default": "./typescript-react.js"
+        },
+        "./typescript-requiring-type-checking": {
+            "require": "./typescript-requiring-type-checking.js",
+            "default": "./typescript-requiring-type-checking.js"
+        },
+        "./typescript-rxjs": {
+            "require": "./typescript-rxjs.js",
+            "default": "./typescript-rxjs.js"
+        },
+        "./typescript": {
+            "require": "./typescript.js",
+            "default": "./typescript.js"
+        }
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.26.0",
+        "@typescript-eslint/parser": "^5.26.0",
+        "eslint": "^8.16.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-config-airbnb-typescript": "^16.2.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^2.7.1",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^26.2.2",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.30.0",
+        "eslint-plugin-react-hooks": "^4.5.0",
+        "eslint-plugin-rxjs": "^5.0.2"
+    },
+    "devDependencies": {
+        "typescript": "^4.7.2"
+    }
+}
